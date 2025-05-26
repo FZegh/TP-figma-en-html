@@ -1,0 +1,305 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1400;1,500;1,600;1,700&display=swap');
+
+
+body{
+
+    padding: 0;
+    background-color: #fcd29f;
+    font-family: advent pro;
+   /* border: 2px solid red;*/
+    min-height: 100vh;
+}
+
+h1, h2{
+    font-family: playpen sans;
+}
+
+.left-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: 100vh;
+    padding-left: 15%; 
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: -60px;
+}
+
+.left-centered h1 {
+  font-size: 3rem; /* ou par exemple 48px */
+  margin-bottom: 1rem;
+}
+
+.left-centered p {
+  font-size: 1.5rem; /* ou par exemple 24px */
+  line-height: 1.6;
+}
+
+
+
+body.pageContact {
+    background-color: #b08968;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/*header, .logo, .footer, #menu {
+ /* border: 1px dashed blue;         /*  Ajout de bordure pour voir mes sections   
+}*/
+
+header {
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: #fcd2a5;
+  
+  }
+
+.logo-container {
+ display: flex;
+ align-items: stretch;   /*  Prend toute la hauteur du conteneur: donc pas besoin de definir une hauteur avec height */
+}
+
+.logo-img {
+  height: auto;
+
+}
+     
+.title-img{
+  flex-grow: 1;   /* Prend la largeur de l'espace restant  */
+  width: 100%;
+  height: auto;
+  object-fit: cover;   
+}
+
+
+
+#nav {            
+  display: flex;
+  justify-content: flex-end;   /* Aligner le menu à droite */   
+  padding-right: 50px;        /* Ajoute un petit espace avec le bord droit */   
+  padding-top: 20px;                         /*Pour structurer l'exterieur*/
+}
+
+#nav ul {
+  display: flex;
+  flex-direction: column;      /* Empile les éléments verticalement */
+  gap: 20px;                   /* Espace entre chaque élément */
+  list-style: none;            /* Enlève les puces */       /* Pour structurer la nav */
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: black;
+}
+
+nav li {
+    margin-bottom: 20px;
+}
+#nav a {
+  color: black; 
+  text-decoration: none; 
+  font-size: 35px;          /* J'ai modifié la taille  suite a la creation de l'animation */
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease, font-style 0.3s ease;
+
+}
+
+/* Animation au survol */
+nav a:hover {
+  transform: skewX(-30deg); /* effet penché */
+}
+
+.apropos {
+  padding: 40px;
+  padding-bottom: 100px;
+  padding-left: 80px; /* ← ajoute un espace à gauche pour ne pas chevaucher le footer */ 
+  max-width: 800px;
+  margin-left: 60px;  /* ou ajuste selon ta nav */
+  font-size: 18px;
+}
+
+
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 5%;
+    
+}
+
+.project {
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    justify-content: center; 
+    text-align: center;
+
+    
+    
+}
+
+.project img {
+    width: 80%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    
+
+    
+}
+
+.project p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    position: relative;
+    padding-left: 15%;
+}
+
+.logo  {
+    width: 80%;
+    height: auto;
+    max-width: 100px;  /*  limite la taille car le logo était trop grand */
+    border-radius: 50%;  /*     Pour qu'il soit rond     */
+    
+}
+
+
+
+a {
+  color: black;               /* a = change la couleur des liens  */
+  text-decoration: none;          
+  font-weight: bold;
+
+}
+
+span{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.button-contact,
+.button-cv{
+  background-color: #b08968;
+  font-size: 30px;
+}
+
+
+.button-cv:active,
+.button-contact:active {
+  transform: scale(0.95);}
+
+  .button-cv:hover,
+.button-contact:hover{
+  background-color:#fcd2a5;
+}
+
+
+
+#boutons-categories {
+  display: flex;
+  gap: 12px;
+  padding: 20px 15%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#boutons-categories button {
+  background-color: #b08968;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Advent Pro', sans-serif;     
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#boutons-categories button:hover {
+  background-color: #fcd29f;
+  color: #b08968;
+}
+
+#boutons-categories button.active {
+  background-color: #fcd29f;
+  color: #b08968;
+  font-weight: 900;
+  box-shadow: 0 0 10px rgba(180, 137, 104, 0.7);
+}
+
+
+.reseaux{
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: left;
+  align-items: left;
+  position: absolute;
+  bottom: 20%;
+  margin-left: 10%;    
+  width: 100%;
+}
+
+.reseaux a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+
+}
+  
+  
+
+
+
+#footer{
+    position: fixed;
+    left: 0; /* Aligné à droite */
+    top: 0; /* Commence en haut */
+    width: 36px; /* Largeur du footer */
+    height: 100vh; 
+    background-color: #f4f4f4; 
+    writing-mode: vertical-rl; 
+    text-align:center;
+    transform: rotate(18Odeg);
+    background-color: #fcd29f;
+
+}
+
+
+
+
+
+
+
