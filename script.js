@@ -32,7 +32,7 @@ function creerNav() {
    nav.style.position = "fixed";
    nav.style.right = "20px";
 
-  if (path.includes("indexAccueil.html")) {
+  if (path.includes("index.html")) {
     // Page d'accueil : nav en haut
    
     nav.style.top = "100px";
