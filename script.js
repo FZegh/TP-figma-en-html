@@ -9,7 +9,7 @@ function creerNav() {
 
   // Création des liens
   let pages = [
-    { nom: "ACCEUIL", lien: "indexAccueil.html" },
+    { nom: "ACCEUIL", lien: "index.html" },
     { nom: "À PROPOS", lien: "indexApropos.html" },
     { nom: "PORTFOLIO", lien: "indexPortfolio.html" },
     { nom: "CONTACT", lien: "indexContact.html" },
